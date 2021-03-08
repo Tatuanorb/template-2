@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Raleway ExtraBold';
+	src: url('../font/raleway-extra-bold/raleway_extrabold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../font/raleway-extra-bold/raleway_extrabold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../font/raleway-extra-bold/raleway_extrabold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../font/raleway-extra-bold/raleway_extrabold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../font/raleway-extra-bold/raleway_extrabold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../font/raleway-extra-bold/raleway_extrabold.svg#raleway_extrabold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
