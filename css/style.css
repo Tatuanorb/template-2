@@ -1,9 +1,11 @@
 body{
-    font-family: ''Montserrat Regular' Regular', sans-serif;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: 16px;
 }
 .header{
 background: url(../images/header.jpg)  top center;
-height: 1024px;
+background-size: cover;
+padding-bottom: 40px;
 }
 
 .container{ 
@@ -57,6 +59,7 @@ padding-top: 40px;
 
 .logo{
     display: flex;
+    
 }
 
 
@@ -257,10 +260,10 @@ padding-top: 10px;
 }
 .realization-screenshots{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    /* position: relative; */
+    grid-template-columns: repeat(3, 1fr);
     align-items: flex-end;
 }
+
 .realization-browser-left{
     grid-column: 1 / -1;
     grid-row: 1;
@@ -331,7 +334,8 @@ font-size: 18px;
 }
 
 .projects{
-    padding: 80PX;
+    padding-top: 80PX;
+    padding-bottom: 80px;
 }
 
 .projects-title{
@@ -394,7 +398,43 @@ font-size: 18px;
 }
 
 
+.projects-product__scale-icon{
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    top: 110px;
+    left: 170px;
+    display: none;
+    color: #ffffff;;
+}
 
+.projects-product__scale-icon:hover{
+    color: #c7b299;
+    font-size: 33px;
+}
+.projects-product__card:hover .projects-product__scale-icon{
+    display: inline;
+}
+
+
+.projects-product__link-project{
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    top: 110px;
+    left: 125px;
+    display: none;
+    color: #ffffff;;
+}
+
+.projects-product__card:hover .projects-product__link-project{
+    display: inline;
+}
+
+.projects-product__link-project:hover{
+    color: #c7b299;
+    font-size: 33px;
+}
 
 .projects-product__title{
     color: #c7b299;
@@ -466,8 +506,6 @@ font-size: 18px;
 }
 
 .video{
-    /* background: url(../images/video.jpg) no-repeat;
-    height: 705px; */
     overflow: hidden;
     position: relative;
     height: 100%;
@@ -683,6 +721,7 @@ padding-bottom: 80px;
 .posts-wrapper{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 40px;
 }
 
 
@@ -754,6 +793,12 @@ padding-bottom: 80px;
 }
 
 
+.posts-card:hover .post-card__photo {
+    filter: brightness(55%);
+}
+
+
+
 .post-card__photo{
     width: 100%;
 }
@@ -765,7 +810,7 @@ padding-bottom: 80px;
 
 
 .nav-left{
-    font-size: 16px;
+    font-size: 22px;
     color: #d1d1d1;
     text-decoration: none;
 }
@@ -775,7 +820,7 @@ padding-bottom: 80px;
 }
 
 .nav-right{
-    font-size: 16px;
+    font-size: 22px;
     color: #d1d1d1;
     text-decoration: none;
 }
@@ -786,7 +831,7 @@ padding-bottom: 80px;
 
 .clients{
     background: url(../images/clients.jpg) no-repeat;
-    height: 489px;
+    padding-bottom: 140px;
    
 }
 
@@ -813,15 +858,34 @@ padding-right: 90px;
 .footer-wrapper{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 80px;
 }
 
 .footer-about-us{
     width: 33%;
 }
+
+.footer-logo{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.footer-logo__text {
+    color: #ffffff;
+    font-family: 'Raleway Regular';
+    font-size: 34px;
+    font-style: normal;
+    padding-top: 10px;
+}
+
+
+
  .footer-about-us__desc{
      color: #555555;
     font-family: 'Montserrat Regular';
     font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 30px;
 
  }   
 
@@ -837,6 +901,7 @@ padding-right: 90px;
     font-family: 'Raleway Regular';
     font-size: 24px;
     font-weight: 700;
+    padding-bottom: 30px;
 }
 
 .footer-dribbple__title{
@@ -844,6 +909,7 @@ padding-right: 90px;
     font-family: 'Raleway Regular';
     font-size: 24px;
     font-weight: 700;
+    padding-bottom: 30px;
 
 }
 
@@ -853,12 +919,23 @@ padding-right: 90px;
 .footer-recent-posts__date{
     font-size: 12px;
     color: #363636;
+    line-height: 20px;
 }
 
 .footer-recent-posts__text{
     line-height: 20px;
     color: #555555;
     font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-recent-posts__text::after{
+    content: '';
+    display: block;
+    width: 270px;
+    height: 1px;
+    background-color: #252525;
+    margin-top: 20px;
 }
 
 .footer-recent-posts__title{
@@ -866,6 +943,7 @@ padding-right: 90px;
     font-family: 'Raleway Regular';
     font-size: 24px;
     font-weight: 700;
+    padding-bottom: 30px;
 }
 
 .footer-twitter__text{
@@ -873,6 +951,16 @@ padding-right: 90px;
     font-size: 14px;
     line-height: 20px;
 }
+
+.footer-twitter__text::after{
+    content: '';
+    display: block;
+    width: 270px;
+    height: 1px;
+    background-color: #252525;
+    margin-top: 20px;
+}
+
 
 .footer-twitter-message__mention{
     color: #00bff3;
